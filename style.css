@@ -1,0 +1,53 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body{
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    background-color: #aaaaaa77;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.heading-title a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+/* When The Screen Width 0 to 600px than the website like */
+@media screen and (max-width: 600px) {
+    .heading a {
+        display: block;
+        width: 100%;
+    }
+    .heading{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        overflow: hidden;
+    }
+    .heading a:hover{
+        background-color: rgba(248, 156, 81, 0.418);
+        /* display: inline; */
+        padding: 15px;
+        border-radius: 20px;
+        width: 100%;
+    }
+  }
+
+  /* top-section */
+  .top-section{
+      display: flex;
+  }
+  .title-info{
+      width: 580px;
+      height: 270px;
+      background-color: cadetblue;
+  }
+  
