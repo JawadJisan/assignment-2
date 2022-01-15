@@ -85,6 +85,11 @@ body{
   .product-info{
       margin-left: 10px;
   }
+  .product-info i{
+    margin-left: 10px;
+    color: gold;
+}
+
 
   .product-info h1,h2,h5{
       margin: 10px;
@@ -103,80 +108,102 @@ body{
   }
 
 /* spectial section */
-.special{
-    background-color: salmon;
+.final-sec{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 10%;
 }
-/* .service{
-    margin: 20px;
-    box-sizing: border-box;
-    border: 15px solid royalblue;
+.frames{
+    display: flex;
+}
+.frame{
     width: 300px;
-    height: 275px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border: 15px solid rebeccapurple;
     position: relative;
     overflow: hidden;
 }
-.service-drtail{
-    width: 100%;
-            border-radius: 15px;
-            height: 200px;
-}
-.photo img{
-    width: 70%;
+
+
+.photoo{
     display: none;
     position: absolute;
-
+    opacity: .3;
+    
 }
-.service:hover .photo img{
-    display:block;
-    margin:0px;
-} */
-
-
-.photo-frame{
+.photoo img{
+    text-align: center;
     width: 300px;
-    height: 275px;
-    border: 15px solid royalblue;
-    border-radius: 5px;
-    position: relative;
-    margin: 15px;
-    /* overflow: hidden; */
+    height: 300px;
 }
-.photo{
-    /* visibility: hidden; */
-    display:none;
-    position: absolute;
-
-    /* width: 100%; */
-    border-radius: 15px;
-    /* height: 200px; */
-}
-.photo-detail{
-    /* display: none; */
-    position: absolute;
-    width: 300px;
-    top: 0;
-}
-.photo-frame:hover.photo{
+.frame:hover .photoo{
     display: block;
 }
-.photo-detail h3{
-    text-align: center;
-    color: rgb(0, 0, 0);
+.frame:hover .photoo img{
+    transform: scale(1.2) rotate(5deg);
+    transition: transform 5s ease-in-out;
 }
-.photo-detail p{
-    color: rgb(8, 8, 8);
-    text-align: justify;
-    padding: 5px;
 
+/* new sectionnn */
+.frame1{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border: 15px solid rgb(235, 34, 101);
+    position: relative;
+    overflow: hidden;
+    color: rgb(139, 34, 66);
 }
-.photo-frame:hover .photo img{
-    transform: scale(1.5) rotate(-360deg);
-    transition: transform 5s ease-in-out ;
-    /* grid-template-columns: repeat(6,100px);
-    flex-direction:;
-    flex-wrap: ;
-    translate: ;
-    position: ; */
+
+
+.photoo1{
+    display: none;
+    position: absolute;
+    opacity: .3;
+    
+}
+.photoo1 img{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+.frame1:hover .photoo1{
+    display: block;
+}
+.frame1:hover .photoo1 img{
+    transform: scale(1.2) rotate(5deg);
+    transition: transform 5s ease-in-out;
+}
+
+/* frame -2 */
+.frame2{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border: 15px solid rgb(235, 81, 34);
+    position: relative;
+    overflow: hidden;
+    color: rgb(253, 124, 38);
+}
+
+
+.photoo2{
+    display: none;
+    position: absolute;
+    opacity: .3;
+    
+}
+.photoo2 img{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+.frame2:hover .photoo2{
+    display: block;
 }
 
 
@@ -202,6 +229,7 @@ body{
       padding: 10px;
       font-size: 30px;
   }
+
 
 
 
@@ -243,15 +271,18 @@ body{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
       }
+      .frames{
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
 
+/* When The divice width 552px to 1000px */
 
   @media screen and (max-width: 1000px) and (min-width: 552px){
-    body{
-        background-color: rgb(205, 50, 128);
-     }
+    
     .heading a {
         display: block;
         width: 100%;
